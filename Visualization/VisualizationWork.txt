@@ -1,3 +1,0 @@
-For visualization:
-Dynamic Visualization Not Static
-mpld3. brings matplot to web browser. 
