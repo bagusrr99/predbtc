@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
+
+  <title>Predict Price Bitcoin</title>
+  <meta charset="UTF-8">
+  <title>Predict Price Bitcoin</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+  <!-- Bootstrap -->
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+  <!-- Custom styles -->
+
+  <!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+  <meta charset="UTF-8">
+  <title>Prediksi Harga Bitcoin</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body class="home">
+  <nav class="navbar navbar-default navbar-sticky">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+          <span class="icon-bar"></span> </button>
+      </div>
+
+      <div class="navbar-collapse collapse">
+
+        <ul class="nav navbar-nav">
+          <li ><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li class="active"><a href="/pred">Prediction</a>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="new" style="position: relative; right: 50px"; >
+  <div style="position: relative; top: 150px;" class="login">
+    <h1>Predict Bitcoin Price</h1>
+    <h3> Masukan Harga Bitcoin</h3>
+      <form action="{{ url_for('predict')}}" method="post" name="google-sheet">
+      <input type="number"  name="price_open" placeholder="Open Price" required="required" min="1"/>
+      <input type="number"  name="price_high" placeholder="Hight Price" required="required" min="1"/>
+      <input type="number" name="price_low" placeholder="Low Price" required="required" min="1"/>
+
+
+      <button type="submit" name="submit" value="predict" class="btn">Predict</button>
+      <!-- <button type="submit" name="export" value="export" class="btn"> Export</button> -->
+    </form>
+    <br>
+    <br>
+    {{ prediction_text }}
+  </div>
+  <script>
+    alert("Exported."){
+          .catch(error => console.error('Error!', error.message))
+          // .then(response => alert("{{prediction_text}}"))
+      }
+    </script> -->
+
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
+
+  <title>More </title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+  <!-- Bootstrap -->
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+  <!-- Custom styles -->
+
+  <!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+
+<body class="home">
+
+  <nav class="navbar navbar-default navbar-sticky">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+          <span class="icon-bar"></span> </button>
+      </div>
+
+      <div class="navbar-collapse collapse">
+
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="/pred">Prediction</a>
+          <li><a href="/visual">Visualization</a></li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+
+    <div class="container">
+      <center>
+        <h2><span>History</span></h2>
+        <br>
+
+        <h3 class="">Global Emissions by Gas</h3>
+
+        <img src="{{url_for('static', filename='globalemission.png')}}" />
+      </center>
+      <br>
+      <p> Carbon dioxide (CO2): Fossil fuel use is the primary source of CO2. CO2 can also be emitted from
+          direct
+          human-induced impacts on forestry and other land use, such as through deforestation, land clearing for
+          agriculture, and degradation of soils. Likewise, land can also remove CO2 from the atmosphere through
+          reforestation, improvement of soils, and other activities. <br> <br>
+          Methane (CH4): Agricultural activities, waste management, energy use, and biomass burning all contribute to
+          CH4
+          emissions. <br> <br>
+          Nitrous oxide (N2O): Agricultural activities, such as fertilizer use, are the primary source of N2O emissions.
+          Fossil fuel combustion also generates N2O.<br> <br>
+          Fluorinated gases (F-gases): Industrial processes, refrigeration, and the use of a variety of consumer
+          products
+          contribute to emissions of F-gases, which include hydrofluorocarbons (HFCs), perfluorocarbons (PFCs), and
+          sulfur
+          hexafluoride (SF6). </p>
+
+      <br> <br>
+
+      <center>
+        <h3 class="">Trends in global emission</h3>
+        <img src="{{url_for('static', filename='fuels.png')}}" />
+      </center>
+      <br>
+      <p>  Global carbon emissions from fossil fuels have significantly increased since 1900. Since 1970, CO2
+          emissions have increased by about 90%, with emissions from fossil fuel combustion and industrial processes
+          contributing about 78% of the total greenhouse gas emissions increase from 1970 to 2011. Agriculture,
+          deforestation, and other land-use changes have been the second-largest contributors. <br> <br>
+          Emissions of non-CO2 greenhouse gases have also increased significantly since 1900. To learn more about past
+          and
+          projected global emissions of non-CO2 gases.</p>
+
+      <center>
+        <h3 class="">Emission by economic sector</h3>
+        <img src="{{url_for('static', filename='sector.png')}}" />
+      </center>
+      <br>
+      <p>> Electricity and Heat Production (25% of 2010 global greenhouse gas emissions): The burning of coal,
+          natural gas, and oil for electricity and heat is the largest single source of global greenhouse gas emissions.<br> <br>
+          Industry (21% of 2010 global greenhouse gas emissions): Greenhouse gas emissions from industry primarily
+          involve fossil fuels burned on site at facilities for energy. This sector also includes emissions from
+          chemical, metallurgical, and mineral transformation processes not associated with energy consumption and
+          emissions from waste management activities. <br> <br>
+          Agriculture, Forestry, and Other Land Use (24% of 2010 global greenhouse gas emissions): Greenhouse gas
+          emissions from this sector come mostly from agriculture (cultivation of crops and livestock) and
+          deforestation. This estimate does not include the CO2 that ecosystems remove from the atmosphere by
+          sequestering carbon in biomass, dead organic matter, and soils, which offset approximately 20% of emissions
+          from this sector.<br> <br>
+          Transportation (14% of 2010 global greenhouse gas emissions): Greenhouse gas emissions from this sector
+          primarily involve fossil fuels burned for road, rail, air, and marine transportation. Almost all (95%) of the
+          world's transportation energy comes from petroleum-based fuels, largely gasoline and diesel.<br> <br>
+          Buildings (6% of 2010 global greenhouse gas emissions): Greenhouse gas emissions from this sector arise from
+          onsite energy generation and burning fuels for heat in buildings or cooking in homes. (Note: Emissions from
+          electricity use in buildings are excluded and are instead covered in the Electricity and Heat Production
+          sector.)<br> <br> 
+          Other Energy (10% of 2010 global greenhouse gas emissions): This source of greenhouse gas emissions refers to
+          all emissions from the Energy sector which are not directly associated with electricity or heat production,
+          such as fuel extraction, refining, processing, and transportation. </p>
+    </div>
+
+   
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div style="position: relative; left:60px" class="col-md-1 widget">
+            <h4 style="color:white; position: relative; bottom: 10px; " class="widget-title"> <strong> Contact </strong>
+            </h4>
+            <div class="widget-body">
+              <p style="color:white"> 9823004560<br>
+                <a href="mailto:#">ankit.sharma@deerwalk.edu.np</a><br>
+                <br>
+                Dhobighat, Lalitpur, Nepal
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-md-3 widget">
+  
+            <h4 style="color:white; text-align: center; position:relative; left: 440px" class="widget-title">
+              <strong>Follow Me</strong>
+            </h4>
+  
+            <div style="position: relative; left: 510px" class="widget-body">
+              <p class="follow-me-icons">
+                <a href="https://twitter.com/nasu_la"><i class="fa fa-twitter fa-2"></i></a>
+                <a href="https://www.reddit.com/user/nasu-la"><i class="fa fa-dribbble fa-2"></i></a>
+                <a href="https://www.reddit.com/user/nasu-la"><i class="fa fa-github fa-2"></i></a>
+                <a href="https://www.facebook.com/a4ankitbruh"><i class="fa fa-facebook fa-2"></i></a>
+              </p>
+            </div>
+          </div>
+  
+  
+  
+        </div> <!-- /row of widgets -->
+      </div>
+    </footer>
+  
+
+
+    <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/template.js"></script>
+
+
+
+
+</body>
+
+</html>
